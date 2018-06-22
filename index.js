@@ -11,8 +11,8 @@ ser.listen(5000,function(){
 
 var connection = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
-  password: 'k',
+  user: 'user',
+  password: 'pass',
    database: 'cust_sal'
 })
 
