@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<link rel='stylesheet' href="my.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='add_product.js'></script>
+<script>
+    fun=function(){
+        window.location='main.html'
+    }
+    fun1=function(){
+        localStorage.clear();
+        window.location='index.html'
+    }
+</script>
+</head>
+<body>
+    <h1>
+        Add A New Product    
+    </h1>
+    <div  >
+            <button value='home' onclick="fun()">
+                    HOME
+            </button>
+        
+            <button value='home' onclick="fun1()">
+                    LOGOUT
+            </button>
+    </div>
+    <!-- <form name='myform' action="./index.js/endpointUrl" enctype='multipart/form-data' method="POST"> -->
+
+        <div class='container' style="align-content: center">
+                <div class='row'>
+                    <span class ='col-sm'>ProductId</span>
+                    <input type="number" class ='col-sm' id='add_Product_id' style='margin-left: 50px'>
+                </div>
+                <div class="row">
+                    <span class ='col-sm'>ProductName</span>
+                    <input type="text" class ='col-sm' id='add_Product' style='margin-left: 50px'>
+                </div>
+                <div class="row">
+                    <span class ='col-sm'>Manufacturer</span>
+                    <input type="text" class ='col-sm' id='add_Manufacturer' style='margin-left: 50px'>
+                </div>
+                <div class="row">
+                    <span class ='col-sm'>Price</span>
+                    <input type="number" id='add_Price' class ='col-sm' style='margin-left: 50px'>
+                </div>
+                <div class="row">
+                    <span class ='col-sm'>Ram</span>
+                    <input type="number" class ='col-sm' id='add_Ram' style='margin-left: 50px'>
+                </div>
+                <div class="row">
+                    <span class ='col-sm'>Internal Storage</span>
+                    <input type="number" id='add_Internal' class ='col-sm' style='margin-left: 50px'> 
+                </div>
+                <div class="row">
+                    <span class ='col-sm'>Front Camera</span>
+                    <input type="number" id='add_Front' class ='col-sm' style='margin-left: 50px'>
+                </div>
+                <div class="row">
+                    <span class ='col-sm'>Rear Camera</span>
+                    <input type="number" id='add_Rear' class ='col-sm' style='margin-left: 50px'>
+                </div>
+                <div class="row">
+                    <span class ='col-sm'>Quantity Avialable</span>
+                    <input type="number" id='Quantity_Avialable' class ='col-sm'style='margin-left: 50px'>
+                </div>
+                <div>
+                    <input type="button" id='button_Add' value="Add" class ='col-sm' >
+                </div>
+            </div>
+</body>
+</html>

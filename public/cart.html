@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='cart.js'></script>
+<link rel='stylesheet' href='my.css'> 
+<script>
+    fun=function(){
+        window.location='main.html'
+    }
+    fun1=function(){
+        localStorage.clear();
+        window.location='index.html'
+    }
+</script>
+
+</head>
+<body>
+    <button value='home' onclick="fun()">
+            HOME
+    </button>
+
+    <button value='home' onclick="fun1()">
+            LOGOUT
+    </button>
+    
+    <h1 id="sira">
+        WELCOME TO CART ,
+    </h1>
+    <div class='container' id='outer1'>
+
+    </div>
+</body>
+</html>

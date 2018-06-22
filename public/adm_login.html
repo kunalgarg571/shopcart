@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='adm_login.js'></script>
+<link rel='stylesheet' href='style.css'> 
+
+<script>
+    function myFunction(){
+        window.location="add_product.html";
+    }
+    fun=function(){
+        window.location='main.html'
+    }
+    fun1=function(){
+        localStorage.clear();
+        window.location='index.html'
+    }
+
+</script>
+</head>
+<body>
+    <!-- <input type="text" id='username'></input>
+    <input type='password' id='pass'></input>
+    <input type="button" id='login'value='login'></input> -->
+    <h1>
+        Add Item to Cart
+    </h1>
+    <div>
+            <button value='home' onclick="fun()">
+                    HOME
+            </button>
+        
+            <button value='home' onclick="fun1()">
+                    LOGOUT
+            </button>
+    </div>
+    <input type='button' id='add_product' onclick="myFunction()" value='add_product'>
+    <input type="button" id="add_quantity" on-click=""   value="add_quantity">
+
+    <div class='new1' id='hi'>
+    <div>
+        <span>Product_id</span>
+        <input type="number" id='Product_id'>
+    </div>
+    <div>
+        <span>quantity</span>
+        <input type='number' id='quantity'>
+    </div>
+    <div>
+        <input type='button' id='add' value='add'>
+    </div>
+     
+    </input>
+    </div>
+    <!-- <form name='myform' action="./index.js/endpointUrl" enctype='multipart/form-data' method="POST">
+        <input type="file" name="pic"  id='kunal' accept="image/*">
+        <input type="button" id='upload_image' value='upload'>    
+    </form> -->
+
+
+</body>
+</html>
